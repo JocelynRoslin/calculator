@@ -39,7 +39,20 @@
             
 
         }
+        function myfun5()
+
+        {
+        var a= document.getElementById('number').value;
+        var b=document.getElementById('numbers').value;
+        var c = a%b;
+        document.getElementById('result').innerHTML=(a+"%"+b+"="+c);
         
+
+    }
+
+
+
+ 
 
 
     </script>
@@ -50,7 +63,8 @@
 <input type="submit" value="multiply" onclick="return myfun()">
 <input type="submit" value="divide" onclick="return myfun2()">
 <input type="submit" value="add" onclick="return myfun3()">
-<input type="submit" value="sub" onclick="return myfun4()"><br><br>
+<input type="submit" value="sub" onclick="return myfun4()">
+<input type="submit" value="modulo" onclick="return myfun5()"><br><br>
 <b>The result:</b><br><br>
 <span id ="result"></span>
 
