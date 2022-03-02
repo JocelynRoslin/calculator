@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var basic_salary=prompt("Enter your basic salary");
+        var hours=prompt("Enter the total number of hours worked in a month");
+        var holidays=prompt("Enter  how many holidays do you take in month ");
+        var absent=prompt("Enter your how many absences do you take in month ");
+        var number_of_hours_late=prompt("Enter your how many hours you're late in month ");
+        
+        var hour = basic_salary/ 8 * hours;
+        var holiday = basic_salary * holidays *2;
+        var late =    basic_salary/8;
+        var lates = late*number_of_hours_late;
+        var abs = basic_salary*absent;
+        
+
+
+        var month_salary=hour+holiday-lates-abs;
+
+        document.write("your month salary is \t"+month_salary);
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+        
+        
+        
+    </script>
+    
+</body>
+</html>
